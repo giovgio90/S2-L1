@@ -10,26 +10,28 @@ REGOLE
 /* ESERCIZIO 1
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
-const title = "I principali datatype in JavaScript sono:";
-const string = "Il dato stringa: sequenza di caratteri racchiusi tra gli apici;";
-const number = "Il dato Numerico: rappresenta i numeri, sia interi che decimali;";
-const boolean =
-  "Il dato Booleano: rappresenta un valore di verità, che può essere vero o falso. Utilizzati per prendere decisioni o per valutare condizioni in base alla loro veridicità.";
 
-console.log(title + "\n" + string + "\n" + number + "\n" + boolean);
+// I principali datatype in JavaScript sono:
+
+// 1. Il dato stringa: sequenza di caratteri racchiusi tra gli apici;
+// 2. Il dato Numerico: rappresenta i numeri, sia interi che decimali;
+// 3. Il dato Booleano: rappresenta un valore di verità, che può essere vero o falso. Utilizzati per prendere decisioni o per valutare condizioni in base alla loro veridicità.";
+// 4. Il dato null: rappresenta l'intenzionale assenza di un valore. Viene spesso utilizzato per indicare che una variabile non contiene alcun valore;
+// 5. viene assegnato a una variabile quando è stata dichiarata, ma non ha ancora un valore assegnato;
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
 const name = "Giovanni";
+console.log("Esercizio 2: ", name);
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
-const myNumber = 12;
-const yourNumber = 20;
+let myNumber = 12;
+let yourNumber = 20;
 
 console.log("La somma tra 12 e 20 è:", myNumber + yourNumber);
 
@@ -37,7 +39,7 @@ console.log("La somma tra 12 e 20 è:", myNumber + yourNumber);
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
-const x = 12;
+let x = 12;
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
@@ -59,10 +61,10 @@ console.log(4 - x);
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
-const name1 = "john";
-const name2 = "John";
+let name1 = "john";
+let name2 = "John";
 
-const lowerCase = name1.toLowerCase() === name2.toLowerCase();
+let lowerCase = name1.toLowerCase() === name2.toLowerCase();
 
 console.log(name1 === name2);
 console.log(lowerCase);
