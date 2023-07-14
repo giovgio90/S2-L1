@@ -13,47 +13,50 @@ REGOLE
 
 // I principali datatype in JavaScript sono:
 
-// 1. Il dato stringa: sequenza di caratteri racchiusi tra gli apici;
-// 2. Il dato Numerico: rappresenta i numeri, sia interi che decimali;
-// 3. Il dato Booleano: rappresenta un valore di verità, che può essere vero o falso. Utilizzati per prendere decisioni o per valutare condizioni in base alla loro veridicità.";
-// 4. Il dato null: rappresenta l'intenzionale assenza di un valore. Viene spesso utilizzato per indicare che una variabile non contiene alcun valore;
-// 5. viene assegnato a una variabile quando è stata dichiarata, ma non ha ancora un valore assegnato;
+//Stringa: La stringa sembra una catena di lettere che puoi scrivere tra virgolette. Ad esempio, "cane" è una stringa.
+
+//Numero: I numeri sono come i mattoncini Lego con cui puoi fare calcoli. Puoi sommare, sottrarre, moltiplicare o dividere i numeri.
+
+//Booleano: Un booleano è come un interruttore che può essere acceso o spento. Può avere solo due valori: vero o falso.
+
+//Array: Un array è come una scatola di mattoncini Lego in cui puoi mettere più cose. Puoi mettere numeri, stringhe o addirittura altri array all'interno.
+
+//Oggetto: Un oggetto è come un sacco di mattoncini Lego che possono rappresentare qualcosa di specifico. Puoi mettere molte informazioni diverse all'interno di un oggetto, come il colore preferito o il numero di scarpe di una persona. Ogni informazione all'interno dell'oggetto ha un nome, proprio come i mattoncini Lego possono avere etichette.
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
 const name = "Giovanni";
-console.log("Esercizio 2: ", name);
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
-
-let myNumber = 12;
-let yourNumber = 20;
-
-console.log("La somma tra 12 e 20 è:", myNumber + yourNumber);
+const num1 = 3;
+const num2 = 8;
+const sumTotal = num1 + num2;
+console.log("ESERCIZIO 3: ", sumTotal);
 
 /* ESERCIZIO 4
- Crea una variable di nome "x" e assegna ad essa il numero 12.
+ Crea una variabile di nome "x" e assegna ad essa il numero 12.
 */
 
-let x = 12;
+const x = 12;
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-// const name = "Giordano"; //   In questo caso appare il seguente errore su Console: Uncaught SyntaxError: Identifier 'name' has already been declared
-// console.log(name); //
+//const name = "Giordano";
+//console.log("ESERCIZIO 5: ", name); // In console.log appare il seguente errore: Uncaught SyntaxError: Identifier 'name' has already been declared
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
-console.log(4 - x);
+const subtraction = 4 - x;
+console.log("ESERCIZIO 8: ", subtraction);
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -61,10 +64,11 @@ console.log(4 - x);
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
-let name1 = "john";
-let name2 = "John";
+const name1 = "john";
+const name2 = "John";
 
-let lowerCase = name1.toLowerCase() === name2.toLowerCase();
+let numbers = name1 === name2;
+console.log("ESERCIZIO 7: ", numbers);
 
-console.log(name1 === name2);
-console.log(lowerCase);
+let equalName = name1.toLowerCase() === name2.toLowerCase();
+console.log("ESERCIZIO 7: ", equalName);
